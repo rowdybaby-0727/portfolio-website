@@ -27,7 +27,8 @@ body {
 
 /* DIFFERENT COLORS */
 .header {
-    background: #ffffff;
+    background: #6c63ff;
+    color: white;
 }
 
 .image {
