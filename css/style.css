@@ -2,19 +2,19 @@ body {
     font-family: Arial;
     background: linear-gradient(to right, #dfe9f3, #ffffff);
     margin: 0;
-    text-align: center;
 }
 
+/* CONTAINER */
 .container {
     width: 80%;
     margin: auto;
     padding: 20px;
 }
 
-/* COMMON CARD STYLE */
+/* COMMON SECTION */
 .section {
     margin: 20px auto;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
     width: 70%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -25,16 +25,31 @@ body {
     transform: scale(1.02);
 }
 
-/* DIFFERENT COLORS */
-.header {
-    background: #6c63ff;
+/* HEADER FLEX */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     color: white;
 }
 
-.image {
-    background: #f1f8e9;
+.header-flex .text {
+    width: 60%;
 }
 
+.header-flex .image {
+    width: 30%;
+    text-align: right;
+}
+
+/* IMAGE */
+img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* COLORS FOR SECTIONS */
 .skills {
     background: #e3f2fd;
 }
@@ -51,26 +66,30 @@ body {
     background: #fce4ec;
 }
 
-/* IMAGE */
-img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-/* TEXT */
-h1 {
-    color: #222;
-}
-
 /* BUTTON */
 a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     background: #007bff;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 a:hover {
     background: #0056b3;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-flex .text,
+    .header-flex .image {
+        width: 100%;
+    }
 }
