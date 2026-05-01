@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-color: #e6f0ff;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
     margin: 0;
     text-align: center;
 }
@@ -11,24 +11,57 @@ body {
     padding: 20px;
 }
 
+/* COMMON CARD STYLE */
 .section {
-    background: white;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     width: 70%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* DIFFERENT COLORS */
+.header {
+    background: #ffffff;
+}
+
+.image {
+    background: #f1f8e9;
+}
+
+.skills {
+    background: #e3f2fd;
+}
+
+.projects {
+    background: #e8f5e9;
+}
+
+.education {
+    background: #fff3e0;
+}
+
+.contact {
+    background: #fce4ec;
+}
+
+/* IMAGE */
 img {
     width: 150px;
     border-radius: 50%;
 }
 
+/* TEXT */
 h1 {
     color: #222;
 }
 
+/* BUTTON */
 a {
     text-decoration: none;
     color: white;
