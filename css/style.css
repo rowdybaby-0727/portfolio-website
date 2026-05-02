@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial;
     background: linear-gradient(to right, #dfe9f3, #ffffff);
     margin: 0;
+    padding-top: 70px;
 }
 
 /* CONTAINER */
@@ -92,4 +96,27 @@ a:hover {
     .header-flex .image {
         width: 100%;
     }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #00f2fe;
 }
