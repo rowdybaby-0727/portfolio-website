@@ -30,7 +30,7 @@ body {
 /* MAIN */
 .main-container {
     padding-top: 80px;
-    width: 85%;
+    width: 100px;
     margin: auto;
 }
 
@@ -44,7 +44,10 @@ body {
     border-radius: 10px;
     color: white;
 }
-
+.header {
+    justify-content: center;
+    text-align: center;
+}
 .header img {
     width: 120px;
     border-radius: 50%;
@@ -53,12 +56,13 @@ body {
 /* GRID */
 .grid {
     display: flex;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 .left {
-    width: 65%;
+    width: 60%;
 }
 
 .right {
@@ -73,7 +77,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
+.card {
+    text-align: left;
+}
 /* BUTTONS */
 a {
     display: inline-block;
