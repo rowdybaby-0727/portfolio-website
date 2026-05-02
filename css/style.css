@@ -1,11 +1,41 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: Arial;
     background: linear-gradient(to right, #dfe9f3, #ffffff);
     margin: 0;
     padding-top: 70px;
+}
+
+/* NAVBAR (MAKE IT STICKY 🔥) */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #00f2fe;
 }
 
 /* CONTAINER */
@@ -70,8 +100,8 @@ img {
     background: #fce4ec;
 }
 
-/* BUTTON */
-a {
+/* BUTTON (ONLY FOR CONTACT LINKS) */
+.contact a {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -81,8 +111,14 @@ a {
     margin-top: 10px;
 }
 
-a:hover {
+.contact a:hover {
     background: #0056b3;
+}
+
+/* LIST STYLE (RESUME LOOK) */
+ul {
+    text-align: left;
+    display: inline-block;
 }
 
 /* MOBILE RESPONSIVE */
@@ -96,27 +132,8 @@ a:hover {
     .header-flex .image {
         width: 100%;
     }
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    color: white;
-    padding: 15px 30px;
-}
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #00f2fe;
+    .section {
+        width: 90%;
+    }
 }
