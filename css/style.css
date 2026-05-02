@@ -12,24 +12,41 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;                  /* FIX */
     width: 100%;
+    box-sizing: border-box;   /* FIX */
     background: #111;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 20px;       /* REDUCED PADDING */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 1000;
 }
 
+/* NAV MENU */
 .navbar ul {
     display: flex;
-    gap: 20px;
+    gap: 15px;                /* REDUCED GAP */
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+/* NAV LINKS */
 .navbar a {
     color: white;
     text-decoration: none;
+    background: #007bff;
+    padding: 6px 12px;        /* SMALLER BUTTON */
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;      /* PREVENT BREAK */
+}
+
+/* HOVER */
+.navbar a:hover {
+    background: #0056b3;
 }
 
 /* MAIN */
@@ -55,7 +72,7 @@ body {
     border-radius: 50%;
 }
 
-/* GRID FIXED */
+/* GRID */
 .grid {
     display: flex;
     justify-content: space-between;
@@ -63,7 +80,7 @@ body {
     margin-top: 20px;
 }
 
-/* LEFT RIGHT FIXED */
+/* LEFT RIGHT */
 .left {
     width: 60%;
 }
@@ -72,7 +89,7 @@ body {
     width: 40%;
 }
 
-/* CARD FIXED (IMPORTANT) */
+/* CARD */
 .card {
     width: 100%;
     background: white;
@@ -82,18 +99,18 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* TEXT FIX */
+/* TEXT */
 .card p {
     line-height: 1.6;
 }
 
-/* LIST FIX */
+/* LIST */
 ul {
     padding-left: 20px;
 }
 
-/* BUTTON */
-a {
+/* BUTTON (ONLY INSIDE CONTENT) */
+.main-container a {
     display: inline-block;
     background: #007bff;
     color: white;
@@ -112,5 +129,9 @@ a {
     .main-container {
         margin-left: 10px;
         width: 95%;
+    }
+
+    .navbar ul {
+        gap: 10px;
     }
 }
