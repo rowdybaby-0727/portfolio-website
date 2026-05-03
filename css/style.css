@@ -75,7 +75,7 @@ h1{
     font-size: 28px;
 }
 h2 {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #16181a;
 }
 .card:hover{
     transform: translateY(-5px);
