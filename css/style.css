@@ -138,13 +138,6 @@ h2 {
     transform: translateY(-8px);
     transition: 0.3s;
 }
-.card {
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
 /* TEXT */
 .card p {
     line-height: 1.6;
