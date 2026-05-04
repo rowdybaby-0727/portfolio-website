@@ -80,6 +80,7 @@ h2 {
 .card:hover{
     transform: translateY(-5px);
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -133,7 +134,17 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+.card {
+    transition: 0.3s;
+}
 
+.card:hover {
+    transform: translateY(-8px);
+}
 /* TEXT */
 .card p {
     line-height: 1.6;
