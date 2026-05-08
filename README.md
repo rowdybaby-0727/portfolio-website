@@ -62,7 +62,7 @@ Example snippet to add a new project:
 
 `html
 <div class="project">
-  <h3>My Awesome App</h3>
+  <h3>Prasanna Protfolio</h3>
   <p>Brief description of the project goes here.</p>
   <a href="https://rowdybaby-0727.github.io/portfolio-website/" target="_blank">View on GitHub</a>
 </div>
