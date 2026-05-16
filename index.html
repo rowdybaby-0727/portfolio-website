@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Prasanna Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
@@ -16,6 +24,7 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <h2>Prasanna R</h2>
+
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -25,16 +34,25 @@
     </ul>
 </nav>
 
+<!-- MAIN -->
 <div class="main-container">
 
     <!-- HEADER -->
-    <div class="header">
+    <div class="header" data-aos="fade-up">
+
         <img src="images/PHOTO.jpeg" alt="Profile">
 
-        <div>
+        <div class="header-text">
+
             <h1>Prasanna R</h1>
-            <p>Computer Science Student | Web Developer</p>
-            <p><i>Interested in AI, Web Development, and Problem Solving</i></p>
+
+            <p>
+                <span class="typing"></span>
+            </p>
+
+            <p>
+                <i>Interested in AI, Web Development, Machine Learning and Problem Solving</i>
+            </p>
 
             <a href="https://github.com/rowdybaby-0727" target="_blank">
                 <i class="fab fa-github"></i> GitHub
@@ -43,7 +61,9 @@
             <a href="https://www.linkedin.com/in/prasanna-ramu-51a77727b/" target="_blank">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
+
         </div>
+
     </div>
 
     <!-- GRID -->
@@ -53,63 +73,121 @@
         <div class="left">
 
             <!-- ABOUT -->
-            <div class="card" id="about">
+            <div class="card" id="about" data-aos="fade-up">
+
                 <h2>About Me</h2>
-                <p>I am a Computer Science student passionate about building real-world applications using Python, AI and Web Development.</p>
+
+                <p>
+                    I am a Computer Science Engineering student passionate about
+                    Artificial Intelligence, Web Development and Machine Learning.
+                    I enjoy building real-world applications using Python and modern web technologies.
+                </p>
+
             </div>
 
             <!-- PROJECTS -->
-            <div class="card" id="projects">
+            <div class="card" id="projects" data-aos="fade-up">
+
                 <h2>Projects</h2>
 
+                <!-- Malware -->
                 <h3>Malware Detection using ML</h3>
+
                 <p><i>Tech: Python, Scikit-learn</i></p>
+
                 <ul>
-                    <li>Used Random Forest and SVM</li>
+                    <li>Used Random Forest and SVM algorithms</li>
                     <li>Improved malware detection accuracy</li>
                 </ul>
-                <a href="https://github.com/rowdybaby-0727/Malware-Detection-Miniproject-" target="_blank">View Project</a>
 
+                <a href="https://github.com/rowdybaby-0727/Malware-Detection-Miniproject-" target="_blank">
+                    View Project
+                </a>
+
+                <hr>
+
+                <!-- Agriculture -->
                 <h3>Agriculture Chatbot</h3>
-                <p><i>Tech: Python, NLP</i></p>
+
+                <p><i>Tech: Python, NLP, Streamlit</i></p>
+
                 <ul>
                     <li>Built chatbot to assist farmers</li>
+                    <li>Provides farming-related suggestions</li>
                 </ul>
-                <a href="https://github.com/rowdybaby-0727/Agriculture-Chatbot" target="_blank">View Project</a>
 
+                <a href="https://github.com/rowdybaby-0727/Agriculture-Chatbot" target="_blank">
+                    View Project
+                </a>
+
+                <hr>
+
+                <!-- Stress -->
                 <h3>Stress Detection System</h3>
+
                 <p><i>Tech: Python, Machine Learning</i></p>
-                <ul>
-                    <li>Used ML & Deep Learning</li>
-                </ul>
-                <a href="https://github.com/rowdybaby-0727/Stress-Detection-System" target="_blank">View Project</a>
 
-                <h3>Embroiding Website</h3>
-                <p><i>TTech: HTML5, CSS3, Responsive Web Design</i></p>
                 <ul>
-                    <li>Developed a responsive embroidery business website using HTML5 and CSS3 for showcasing custom embroidery designs and customer orders.</li>
+                    <li>Used Machine Learning and Deep Learning</li>
+                    <li>Analyzed stress patterns from data</li>
                 </ul>
-                <a href="https://github.com/rowdybaby-0727/embroiding-work" target="_blank">View Project</a>
 
+                <a href="https://github.com/rowdybaby-0727/Stress-Detection-System" target="_blank">
+                    View Project
+                </a>
+
+                <hr>
+
+                <!-- Embroidery -->
+                <h3>Embroidery Website</h3>
+
+                <p><i>Tech: HTML5, CSS3, Responsive Web Design</i></p>
+
+                <ul>
+                    <li>Developed responsive embroidery business website</li>
+                    <li>Showcases embroidery designs and customer orders</li>
+                </ul>
+
+                <a href="https://github.com/rowdybaby-0727/embroiding-work" target="_blank">
+                    View Project
+                </a>
+
+                <hr>
+
+                <!-- Portfolio -->
                 <h3>Portfolio Website</h3>
-                <p><i>Tech: HTML, CSS, JavaScript</i></p>
-                <ul>
-                    <li>Designed responsive portfolio website</li>
-                </ul>
-                <a href="https://github.com/rowdybaby-0727/portfolio-website" target="_blank">View Project</a>
 
+                <p><i>Tech: HTML, CSS, JavaScript</i></p>
+
+                <ul>
+                    <li>Designed responsive personal portfolio website</li>
+                </ul>
+
+                <a href="https://github.com/rowdybaby-0727/portfolio-website" target="_blank">
+                    View Project
+                </a>
+
+                <hr>
+
+                <!-- Resume Analyzer -->
                 <h3>AI Resume Analyzer</h3>
+
                 <p><i>Tech: Python, Streamlit, NLP, PDF Processing</i></p>
 
                 <ul>
                     <li>Built AI-based resume analyzer web app</li>
-                    <li>Extracts resume skills and calculates ATS score</li>
+                    <li>Calculates ATS score and extracts skills</li>
                     <li>Provides resume improvement suggestions</li>
                 </ul>
 
-                <a href="https://github.com/rowdybaby-0727/AI-Resume-Analyzer" target="_blank">View Project</a>
+                <a href="https://github.com/rowdybaby-0727/AI-Resume-Analyzer" target="_blank">
+                    View Project
+                </a>
 
-                <a href="https://ai-resume-analyzer-ravzahlzcxmnkesjpywyzt.streamlit.app/" target="_blank">Live Demo</a>
+                <a href="https://ai-resume-analyzer-ravzahlzcxmnkesjpywyzt.streamlit.app/" target="_blank">
+                    Live Demo
+                </a>
+
             </div>
 
         </div>
@@ -118,54 +196,91 @@
         <div class="right">
 
             <!-- SKILLS -->
-            <div class="card">
+            <div class="card" data-aos="fade-up">
+
                 <h2>Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Cloud Computing</li>
-                </ul>
+
+                <p>Python</p>
+                <div class="bar">
+                    <div class="python"></div>
+                </div>
+
+                <p>HTML & CSS</p>
+                <div class="bar">
+                    <div class="html"></div>
+                </div>
+
+                <p>Machine Learning</p>
+                <div class="bar">
+                    <div class="ml"></div>
+                </div>
+
+                <p>Cloud Computing</p>
+                <div class="bar">
+                    <div class="cloud"></div>
+                </div>
+
             </div>
 
             <!-- EDUCATION -->
-            <div class="card" id="education">
+            <div class="card" id="education" data-aos="fade-up">
+
                 <h2>Education</h2>
+
                 <ul>
                     <li>B.E Computer Science Engineering (2022–2026)</li>
                     <li>CGPA: 7.6</li>
                 </ul>
+
             </div>
 
             <!-- ACHIEVEMENTS -->
-            <div class="card" id="achievements">
+            <div class="card" id="achievements" data-aos="fade-up">
+
                 <h2>Achievements & Certifications</h2>
 
                 <ul>
                     <li>Completed Python Course</li>
                     <li>Built Machine Learning Projects</li>
+                    <li>Participated in Hackathons</li>
                 </ul>
 
                 <h3>Certifications</h3>
 
                 <ol>
                     <li>Introduction to HTML, CSS, & JavaScript – IBM (Coursera)</li>
+
                     <li>Introduction to Embedded Machine Learning – Edge Impulse (Coursera)</li>
+
                     <li>Introduction to Programming with MATLAB – Vanderbilt University (Coursera)</li>
+
                     <li>Microsoft Azure AI Fundamentals: Generative AI</li>
+
                     <li>MongoDB Basics - ICT Academy Learnathon</li>
                 </ol>
+
             </div>
 
             <!-- CONTACT -->
-            <div class="card" id="contact">
+            <div class="card" id="contact" data-aos="fade-up">
+
                 <h2>Contact</h2>
-                <p>Email: prasannaramu2703@gmail.com</p>
-                <p>Github: rowdybaby-0727</p>
-                <p>LinkedIn: prasanna-ramu-51a77727b</p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    prasannaramu2703@gmail.com
+                </p>
+
+                <p>
+                    <i class="fab fa-github"></i>
+                    rowdybaby-0727
+                </p>
+
+                <p>
+                    <i class="fab fa-linkedin"></i>
+                    prasanna-ramu-51a77727b
+                </p>
+
             </div>
 
         </div>
@@ -173,6 +288,30 @@
     </div>
 
 </div>
+
+<!-- Typed JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+var typed = new Typed(".typing", {
+    strings: [
+        "AI Developer",
+        "Web Developer",
+        "Machine Learning Enthusiast",
+        "Python Programmer"
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+});
+</script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
 
 </body>
 </html>
