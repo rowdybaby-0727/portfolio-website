@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -127,20 +128,15 @@ body {
     box-shadow: 0 0 12px cyan;
 }
 
-/* GRID */
+/* FULL WIDTH LAYOUT */
 .grid {
-    display: flex;
-    gap: 25px;
+    display: block;
     margin-top: 25px;
 }
 
-/* LEFT RIGHT */
-.left {
-    width: 65%;
-}
-
+.left,
 .right {
-    width: 35%;
+    width: 100%;
 }
 
 /* CARD */
@@ -302,15 +298,6 @@ footer {
     .header {
         flex-direction: column;
         text-align: center;
-    }
-
-    .grid {
-        flex-direction: column;
-    }
-
-    .left,
-    .right {
-        width: 100%;
     }
 
     .main-container {
