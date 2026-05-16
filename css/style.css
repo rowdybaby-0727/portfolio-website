@@ -157,6 +157,11 @@ body {
     box-sizing: border-box;
 }
 
+/* ACHIEVEMENTS CARD */
+.achievements-card {
+    min-height: 300px;
+}
+
 /* CARD HOVER */
 .card:hover {
     transform: translateY(-10px);
