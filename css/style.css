@@ -2,11 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     background: #0f172a;
     color: white;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -15,8 +21,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    box-sizing: border-box;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.75);
     backdrop-filter: blur(10px);
     color: white;
     padding: 15px 25px;
@@ -29,9 +34,9 @@ body {
 
 /* NAVBAR TITLE */
 .navbar h2 {
-    border: none;
-    margin: 0;
     color: cyan;
+    border: none;
+    font-size: 28px;
 }
 
 /* NAV MENU */
@@ -39,8 +44,6 @@ body {
     display: flex;
     gap: 15px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* NAV LINKS */
@@ -48,23 +51,23 @@ body {
     color: white;
     text-decoration: none;
     background: linear-gradient(to right, #00c6ff, #0072ff);
-    padding: 8px 15px;
+    padding: 8px 16px;
     border-radius: 8px;
-    font-size: 14px;
     transition: 0.3s;
-    white-space: nowrap;
+    font-size: 14px;
 }
 
-/* HOVER */
+/* NAV HOVER */
 .navbar a:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0,255,255,0.5);
 }
 
 /* MAIN */
 .main-container {
-    padding-top: 100px;
     width: 85%;
     margin: auto;
+    padding-top: 110px;
 }
 
 /* HEADER */
@@ -72,20 +75,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
     background: linear-gradient(to right, #4facfe, #00f2fe);
-    padding: 35px;
-    border-radius: 15px;
+    padding: 40px;
+    border-radius: 18px;
     color: white;
-    box-shadow: 0 0 25px rgba(0,255,255,0.4);
+    box-shadow: 0 0 25px rgba(0,255,255,0.3);
 }
 
-/* IMAGE */
+/* PROFILE IMAGE */
 .header img {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
+    border-radius: 50%;
     border: 4px solid white;
 }
 
@@ -95,12 +98,13 @@ body {
 }
 
 .header-text h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
 .header-text p {
     font-size: 18px;
+    margin-top: 8px;
 }
 
 /* BUTTONS */
@@ -112,14 +116,16 @@ body {
     background: linear-gradient(to right, #00c6ff, #0072ff);
     color: white;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-right: 10px;
     transition: 0.3s;
 }
 
+/* BUTTON HOVER */
 .header a:hover,
 .main-container a:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,255,255,0.5);
 }
 
 /* GRID */
@@ -140,22 +146,20 @@ body {
 
 /* CARD */
 .card {
-    width: 100%;
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.1);
     padding: 25px;
     margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 18px;
     transition: 0.4s;
-    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 /* CARD HOVER */
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 25px rgba(0,255,255,0.2);
 }
 
 /* HEADINGS */
@@ -166,7 +170,8 @@ h1 {
 h2 {
     color: cyan;
     border-bottom: 2px solid cyan;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* PARAGRAPH */
@@ -175,13 +180,12 @@ h2 {
 }
 
 /* LIST */
-ul,
-ol {
+ul {
     padding-left: 20px;
     line-height: 1.8;
 }
 
-/* PROJECT SPACING */
+/* PROJECT TITLE */
 #projects h3 {
     margin-top: 25px;
     color: #00f2fe;
@@ -199,8 +203,8 @@ hr {
     width: 100%;
     background: #1e293b;
     border-radius: 10px;
-    margin-bottom: 20px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .bar div {
@@ -208,7 +212,7 @@ hr {
     border-radius: 10px;
 }
 
-/* INDIVIDUAL SKILLS */
+/* SKILLS */
 .cloud {
     width: 95%;
     background: violet;
@@ -229,25 +233,35 @@ hr {
     background: limegreen;
 }
 
-/* TYPING TEXT */
+/* TYPING */
 .typing {
     color: yellow;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-/* CONTACT ICONS */
+/* CONTACT */
 #contact i {
-    margin-right: 10px;
     color: cyan;
+    margin-right: 10px;
 }
 
-/* MOBILE */
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    background: rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     .navbar {
         flex-direction: column;
         gap: 15px;
+        padding: 15px;
     }
 
     .navbar ul {
@@ -255,9 +269,24 @@ hr {
         justify-content: center;
     }
 
+    .main-container {
+        width: 95%;
+        padding-top: 140px;
+    }
+
     .header {
         flex-direction: column;
         text-align: center;
+        padding: 25px;
+    }
+
+    .header img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
     }
 
     .grid {
@@ -269,12 +298,8 @@ hr {
         width: 100%;
     }
 
-    .main-container {
-        width: 95%;
-    }
-
-    .header img {
-        width: 140px;
-        height: 140px;
+    .navbar a {
+        font-size: 13px;
+        padding: 7px 12px;
     }
 }
