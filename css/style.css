@@ -223,6 +223,10 @@ hr {
     background: orange;
 }
 
+.c {
+    width: 80%;
+    background: red;
+}
 .python {
     width: 85%;
     background: cyan;
