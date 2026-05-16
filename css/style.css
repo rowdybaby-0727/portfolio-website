@@ -209,24 +209,24 @@ hr {
 }
 
 /* INDIVIDUAL SKILLS */
-.python {
-    width: 90%;
-    background: cyan;
+.cloud {
+    width: 95%;
+    background: violet;
 }
 
 .html {
-    width: 85%;
+    width: 90%;
     background: orange;
 }
 
-.ml {
-    width: 75%;
-    background: limegreen;
+.python {
+    width: 85%;
+    background: cyan;
 }
 
-.cloud {
+.ml {
     width: 70%;
-    background: violet;
+    background: limegreen;
 }
 
 /* TYPING TEXT */
