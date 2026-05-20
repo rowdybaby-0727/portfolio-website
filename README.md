@@ -8,7 +8,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-Markup-orange?style=for-the-badge&logo=html5">
   <img src="https://img.shields.io/badge/CSS3-Styling-blue?style=for-the-badge&logo=css3">
-  <img src="https://img.shields.io/badge/JavaScript-Interactive-yellow?style=for-the-badge&logo=javascript">
   <img src="https://img.shields.io/badge/Responsive-Web%20Design-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/GitHub%20Pages-Deployed-black?style=for-the-badge&logo=github">
 </p>
